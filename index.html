@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venkatesh S | Software Engineer & AI/ML Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="bg-canvas"></canvas>
+    <div class="cursor-glow" id="cursor-glow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">&lt;<span>Venkatesh</span>/&gt;</a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <div class="status-badge">
+                <span class="pulse-dot"></span> Software Engineer @ Lumos Learning
+            </div>
+            <h1 class="glitch-title" data-text="Venkatesh S">Venkatesh S</h1>
+            <div class="typewriter-container">
+                <span class="code-prefix">const role = </span>
+                <span id="typewriter" class="typewriter-text"></span>
+                <span class="cursor">|</span>
+            </div>
+            <p class="hero-bio">
+                Crafting scalable full-stack web applications and intelligent AI/ML solutions. 
+                Passionate about turning complex data and algorithms into seamless, accessible user experiences.
+            </p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i> Explore Projects
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-paper-plane"></i> Get In Touch
+                </a>
+            </div>
+            <div class="social-bar">
+                <a href="https://github.com/VENKATESH2655" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/venkatesh-s-951192245" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:venkateshsgowda191@gmail.com" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="tel:+918310223388" aria-label="Phone">
+                    <i class="fas fa-phone"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Interactive Terminal Card -->
+        <div class="hero-terminal">
+            <div class="terminal-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="terminal-title">venkatesh@portfolio:~</span>
+            </div>
+            <div class="terminal-body" id="terminal-body">
+                <p><span class="prompt">$</span> whoami</p>
+                <p class="output">Venkatesh S — Full-Stack Developer & AI Enthusiast based in Mysore, India.</p>
+                <p><span class="prompt">$</span> cat stack.json</p>
+                <p class="output code-block">{
+  "web": ["PHP", "JavaScript", "HTML/CSS", "Bootstrap", "jQuery"],
+  "languages": ["Java", "Python", "C", "SQL"],
+  "ai_data": ["YOLOv8", "OpenCV", "Power BI", "Tableau"],
+  "databases": ["MySQL", "MongoDB"]
+}</p>
+                <p><span class="prompt">$</span> <span class="blink">_</span></p>
+            </div>
+        </div>
+    </header>
+
+    <!-- About & Stats -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">01. OVERVIEW</span>
+                <h2>Bridging Full-Stack Engineering & AI</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text glass-card">
+                    <p>
+                        I am a Software Engineer with hands-on experience building production-grade educational and assessment platforms using <strong>PHP, JavaScript, Bootstrap, jQuery, HTML, CSS, and MySQL</strong>.
+                    </p>
+                    <p>
+                        Beyond web architecture, I specialize in <strong>Python, Java, SQL, AI/ML, and Data Analytics</strong>—developing real-time computer vision applications and emotion-driven recommender systems that solve real-world accessibility and user-engagement challenges.
+                    </p>
+                    <div class="location-tag">
+                        <i class="fas fa-map-marker-alt"></i> Mysore, Karnataka, India
+                    </div>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card glass-card">
+                        <h3>Full-Stack</h3>
+                        <p>Student & Teacher Portals at Lumos Learning</p>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <h3>8.2 CGPA</h3>
+                        <p>B.E. in Information Science & Engineering</p>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <h3>AI & Vision</h3>
+                        <p>YOLOv8 & OpenCV Real-Time Systems</p>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <h3>Analytics</h3>
+                        <p>Deloitte Job Simulation & BI Tools</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">02. CAREER PATH</span>
+                <h2>Work Experience</h2>
+            </div>
+            <div class="timeline">
+                <!-- Role 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot active"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Software Engineer</h3>
+                                <h4>Lumos Learning</h4>
+                            </div>
+                            <span class="date-badge current">Apr 2026 – Present</span>
+                        </div>
+                        <ul class="timeline-list">
+                            <li>Designed and developed new features for the Student Portal, Teacher Portal, and core assessment platforms.</li>
+                            <li>Implemented responsive UI components and integrated backend APIs using PHP, JavaScript, Bootstrap, jQuery, HTML, CSS, and MySQL.</li>
+                            <li>Built assessment workflows, lesson overview pages, analytics dashboards, accessibility improvements, and reporting features.</li>
+                            <li>Optimized application performance, resolved production issues, and maintained clean, scalable code using Git.</li>
+                            <li>Collaborated cross-functionally with product managers, QA engineers, and developers to deliver production-ready releases.</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>PHP</span><span>JavaScript</span><span>MySQL</span><span>Bootstrap</span><span>jQuery</span><span>Git</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Role 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Software Development Intern</h3>
+                                <h4>Lumos Learning</h4>
+                            </div>
+                            <span class="date-badge">Jan 2026 – Mar 2026</span>
+                        </div>
+                        <ul class="timeline-list">
+                            <li>Developed and enhanced Student Portal and Teacher Portal features using PHP, JavaScript, Bootstrap, jQuery, HTML, CSS, and MySQL.</li>
+                            <li>Built responsive user interfaces and seamlessly integrated frontend components with backend APIs.</li>
+                            <li>Assisted in engineering lesson management modules, assessment engines, dashboards, and interactive result pages.</li>
+                            <li>Fixed bugs, optimized SQL queries for faster data retrieval, and collaborated with senior developers during testing and code reviews.</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>PHP</span><span>SQL Optimization</span><span>HTML5/CSS3</span><span>jQuery</span><span>REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">03. FEATURED WORK</span>
+                <h2>Innovative Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card glass-card">
+                    <div class="project-top">
+                        <div class="project-icon"><i class="fas fa-eye"></i></div>
+                        <span class="project-date">Feb 2025 – Jun 2025</span>
+                    </div>
+                    <h3>Real-Time Object Detection & Voice Narration</h3>
+                    <p>
+                        An assistive computer vision system designed to empower visually impaired users by identifying surroundings in real time and providing instant audio feedback.
+                    </p>
+                    <ul class="project-highlights">
+                        <li>Engineered multi-object tracking from live video streams using <strong>YOLOv8</strong>.</li>
+                        <li>Integrated low-latency text-to-speech narration for real-time object announcements.</li>
+                        <li>Applied data analysis techniques to benchmark detection accuracy and optimize inference speed.</li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span>Python</span><span>YOLOv8</span><span>Computer Vision</span><span>TTS</span><span>Data Analysis</span>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card glass-card">
+                    <div class="project-top">
+                        <div class="project-icon"><i class="fas fa-music"></i></div>
+                        <span class="project-date">Dec 2024 – Apr 2025</span>
+                    </div>
+                    <h3>FaceBeats — Emotion-Based Music Recommender</h3>
+                    <p>
+                        An intelligent web application that reads facial expressions via webcam and curates personalized music playlists tailored to the user's mood.
+                    </p>
+                    <ul class="project-highlights">
+                        <li>Developed a facial emotion recognition pipeline using <strong>OpenCV</strong> and Machine Learning.</li>
+                        <li>Accurately classified real-time expressions including happy, sad, angry, and neutral states.</li>
+                        <li>Built an interactive <strong>Streamlit</strong> web interface featuring live emotion confidence visualizations.</li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span>Python</span><span>OpenCV</span><span>Machine Learning</span><span>Streamlit</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">04. ARSENAL</span>
+                <h2>Technical Skills</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category glass-card">
+                    <div class="skill-cat-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="skill-pills">
+                        <span class="pill">Java</span>
+                        <span class="pill">Python</span>
+                        <span class="pill">C</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card">
+                    <div class="skill-cat-header">
+                        <i class="fas fa-globe"></i>
+                        <h3>Web Technologies</h3>
+                    </div>
+                    <div class="skill-pills">
+                        <span class="pill">PHP</span>
+                        <span class="pill">JavaScript</span>
+                        <span class="pill">HTML5</span>
+                        <span class="pill">CSS3</span>
+                        <span class="pill">Bootstrap</span>
+                        <span class="pill">jQuery</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card">
+                    <div class="skill-cat-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Databases</h3>
+                    </div>
+                    <div class="skill-pills">
+                        <span class="pill">MySQL</span>
+                        <span class="pill">SQL</span>
+                        <span class="pill">MongoDB</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card">
+                    <div class="skill-cat-header">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Data Analytics & AI</h3>
+                    </div>
+                    <div class="skill-pills">
+                        <span class="pill">Power BI</span>
+                        <span class="pill">Tableau</span>
+                        <span class="pill">Excel</span>
+                        <span class="pill">YOLOv8</span>
+                        <span class="pill">OpenCV</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section id="education" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">05. CREDENTIALS</span>
+                <h2>Education & Certifications</h2>
+            </div>
+            <div class="edu-cert-grid">
+                <!-- Education Column -->
+                <div class="edu-column">
+                    <h3 class="sub-heading"><i class="fas fa-graduation-cap"></i> Academic Background</h3>
+                    <div class="edu-card glass-card">
+                        <div class="edu-top">
+                            <h4>B.E. in Information Science and Engineering</h4>
+                            <span class="score-badge">CGPA: 8.2</span>
+                        </div>
+                        <p class="institution">The National Institute of Engineering, Mysuru</p>
+                    </div>
+
+                    <div class="edu-card glass-card">
+                        <div class="edu-top">
+                            <h4>Diploma in Computer Science and Engineering</h4>
+                            <span class="score-badge">CGPA: 8.65</span>
+                        </div>
+                        <p class="institution">Government CPC Polytechnic, Mysore</p>
+                    </div>
+
+                    <div class="edu-card glass-card">
+                        <div class="edu-top">
+                            <h4>SSLC (10th Grade)</h4>
+                            <span class="score-badge">85.5%</span>
+                        </div>
+                        <p class="institution">Sri Lakshmi Venkateshwara Public School</p>
+                    </div>
+                </div>
+
+                <!-- Certifications Column -->
+                <div class="cert-column">
+                    <h3 class="sub-heading"><i class="fas fa-certificate"></i> Certifications</h3>
+                    <div class="cert-card glass-card">
+                        <div class="cert-badge-icon"><i class="fas fa-award"></i></div>
+                        <span class="cert-date">Nov 2025</span>
+                        <h4>Deloitte Australia Data Analytics Job Simulation</h4>
+                        <p class="institution">Forage</p>
+                        <ul class="timeline-list">
+                            <li>Completed an intensive Deloitte job simulation focused on data analytics and forensic technology.</li>
+                            <li>Utilized Excel to classify complex datasets and derive actionable business insights.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="contact-box glass-card">
+                <span class="section-tag">06. CONNECT</span>
+                <h2>Let's Build Something Extraordinary</h2>
+                <p>
+                    Looking for a dedicated Full-Stack Software Engineer or AI/ML collaborator? 
+                    Feel free to reach out directly via email, phone, or social channels.
+                </p>
+                <div class="contact-methods">
+                    <a href="mailto:venkateshsgowda191@gmail.com" class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>venkateshsgowda191@gmail.com</span>
+                    </a>
+                    <a href="tel:+918310223388" class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+91 8310223388</span>
+                    </a>
+                    <a href="https://linkedin.com/in/venkatesh-s-951192245" target="_blank" rel="noopener noreferrer" class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <span>linkedin.com/in/venkatesh-s-951192245</span>
+                    </a>
+                    <a href="https://github.com/VENKATESH2655" target="_blank" rel="noopener noreferrer" class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <span>github.com/VENKATESH2655</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Designed & Built for <strong>Venkatesh S</strong> &bull; Mysore, Karnataka</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
